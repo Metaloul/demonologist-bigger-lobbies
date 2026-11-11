@@ -1,0 +1,18 @@
+Subject: Permission to publish a fork of 16-Player Lobbies
+
+Hi YzzSlav,
+
+Thanks for 16-Player Lobbies. It did not load on my install: the 2024 UE4SS 3.0.1 release cannot start with the game's Unreal Engine 5.6, so I reworked the mod for the UE4SS experimental build.
+
+What changed:
+- runs on UE4SS's experimental build for UE 5.6;
+- optional one-click installer (finds the game, installs UE4SS, checks the log), which downloads nothing;
+- a settings.txt file for every option (player count, gear limits, "2/4" display, leave key...);
+- timers on the game thread and guarded hooks, no periodic full object scans;
+- a small "mod active" indicator on screen.
+
+I would like to publish it on Nexus as a separate mod, "Big Lobbies", with your name and a link to your mod at the top of the page. It would use its own folder (ue4ss\Mods\BigLobbies), and its installer turns your "Multiplayer" folder off so the two mods never run together. It was written with AI assistance, and the page will say so.
+
+Under the Nexus rules on forks, I need your explicit permission for this. Do you agree? If you would rather take the changes into your own mod, I can send you the files instead and not publish anything.
+
+Thanks!

@@ -1,0 +1,6 @@
+# Release files, rebuilt by scripts/build.ps1
+/dist/
+
+# UE4SS is downloaded by scripts/get-ue4ss.ps1; only the pinned version is kept
+/files/UE4SS/*
+!/files/UE4SS/VERSION.txt

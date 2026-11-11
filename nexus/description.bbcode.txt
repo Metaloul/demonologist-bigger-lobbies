@@ -1,0 +1,56 @@
+[size=4][b]Big Lobbies - up to 16 players[/b][/size]
+
+[b]Based on [url=https://www.nexusmods.com/demonologist/mods/13]16-Player Lobbies[/url] by YzzSlav[/b], published with the author's permission. All credit for the original idea and mod goes to them.
+
+Play Demonologist with up to 16 players instead of 4. [b]Only the host needs the mod[/b]: everyone else joins as usual.
+
+[size=3][b]Features[/b][/size]
+[list]
+[*]Up to 16 players in the lobby and in the match (2 to 32 in settings.txt); the map gets extra spawn points.
+[*]More gear: up to 16 flashlights, 16 candles and 16 sanity pills, 4 glasses and 3 crucifixes.
+[*]The host can start the match without waiting for everyone to be "Ready".
+[*]Match stuck? Press F4 twice within 4 seconds to leave it (off when Late Join is installed, which uses the same key).
+[*]Everything is set in a plain text file (settings.txt).
+[*]A small faded "16-player mod active" line in the bottom-right corner (safe house and first 20 s of a match) and "16-player mod" next to the version number on the TV menus show that the mod runs. It can be set to always or off.
+[/list]
+
+[size=3][b]Please read: what the server list shows[/b][/size]
+So that the lobby stays visible and joinable in the server list once 4 players are in, [b]the lobby is published as "2/4, not started"[/b]. Players browsing the list, strangers included, see that number instead of the real one. The game itself keeps the real player count. Set [i]lobby_shown_as_2_of_4 = no[/i] in settings.txt to publish the real count (the lobby may then disappear from the list when it holds 4 or more players; invites still work).
+
+[size=3][b]Changes from 16-Player Lobbies 1.1.0[/b][/size]
+[list]
+[*]Works with UE4SS's experimental build for Unreal Engine 5.6 (the 2024 UE4SS 3.0.1 release cannot start with this game).
+[*]Optional one-click installer (All-in-one file): finds the game through Steam, installs UE4SS, moves an old incompatible UE4SS aside (never deletes it), turns off UE4SS's sample mods, and checks in the log that the mod has loaded. It downloads nothing.
+[*]settings.txt with every option; settings are kept across updates.
+[*]Timers run on the game thread through UE4SS's delayed actions; every hook is guarded, so a script error is logged instead of reaching the game.
+[*]No more periodic full object scans (no micro-freezes).
+[*]The "mod active" indicator.
+[/list]
+
+[size=3][b]Requirements[/b][/size]
+[list]
+[*]Windows 10 or 11, Demonologist on Steam. Tested with game version 2.3.4.
+[*]Mod-only file: [url=https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest]UE4SS experimental build[/url]. The All-in-one file includes it.
+[/list]
+
+[size=3][b]Installation[/b][/size]
+[b]All-in-one (recommended):[/b] close the game, unzip the archive anywhere, double-click [i]INSTALL.bat[/i]. Answer Y to start the game and check that the mod is loaded.
+If the original 16-Player Lobbies mod is installed (ue4ss\Mods\Multiplayer), the installer turns it off and keeps its settings.
+If Windows shows "Windows protected your PC": More info > Run anyway.
+
+[b]Mod only (manual):[/b] install UE4SS (experimental build), then drop the archive's [i]Shivers[/i] folder into the game folder (next to Demonologist.exe). If ue4ss\Mods\Multiplayer exists, delete its enabled.txt.
+
+[b]Uninstall:[/b] UNINSTALL.bat, or delete ue4ss\Mods\BigLobbies.
+
+[size=3][b]Troubleshooting[/b][/size]
+The log is in Shivers\Binaries\Win64\ue4ss\UE4SS.log; the mod's lines start with [BigLobbies]. A game update can break the mod: please post the log in the Bugs tab.
+
+[size=3][b]AI disclosure[/b][/size]
+This mod was written with AI assistance: Claude (Anthropic) wrote most of the Lua script, the installer and the documentation, from the original mod and from the game's files, under my direction and testing.
+
+[size=3][b]Credits[/b][/size]
+[list]
+[*][url=https://www.nexusmods.com/demonologist/mods/13]16-Player Lobbies[/url] by YzzSlav: original mod.
+[*][url=https://github.com/UE4SS-RE/RE-UE4SS]UE4SS[/url] by the UE4SS-RE team, MIT license (included unmodified in the All-in-one file, with its license).
+[*]Demonologist by Clock Wizard Games. This mod is not affiliated with or endorsed by them.
+[/list]

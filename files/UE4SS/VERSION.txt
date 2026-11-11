@@ -1,0 +1,1 @@
+UE4SS v3.0.1-1220-ga9ffb667 (experimental build, https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest)

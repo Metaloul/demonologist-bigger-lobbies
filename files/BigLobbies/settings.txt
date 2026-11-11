@@ -1,0 +1,27 @@
+# Settings of the Big Lobbies mod (Demonologist)
+# Change a value, save, then restart the game. A deleted or invalid line goes back to its default value.
+# This file is kept when you run INSTALL.bat again.
+
+# Maximum number of players in the lobby and in the match (2 to 32; the mod is designed for 16)
+max_players = 16
+
+# Extra gear (yes / no). With "no", the game keeps its original loadout limits.
+extra_gear = yes
+flashlight = 16
+candle = 16
+sanity_pills = 16
+glass = 4
+crucifix = 3
+
+# The host can start the match without waiting for everyone to be "Ready" (yes / no)
+start_without_ready = yes
+
+# The lobby is listed as "2/4, not started" in the server list, so your friends can find it (yes / no)
+lobby_shown_as_2_of_4 = yes
+
+# Small faded "16-player mod active" line in the bottom-right corner of the screen:
+#   on = in the safe house and during the first 20 seconds of a match, always = all the time, off = never
+indicator = on
+
+# Key to press twice within 4 seconds to leave a stuck match (F4, F7, END...) or "none"
+leave_key = F4
